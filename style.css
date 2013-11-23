@@ -39,7 +39,7 @@
   margin-left: 52px;
   margin-right: auto;
   border-radius: 200px; 
-  opacity:0.7;
+  opacity:0.2;
   transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
@@ -54,10 +54,10 @@
   margin-left: 95px;
   margin-right: auto;
   border-radius: 200px; 
-  opacity:0.7;
-  transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
+  opacity:0.2;
+  transition: opacity .7s ease-in-out;
+  -moz-transition: opacity .7s ease-in-out;
+  -webkit-transition: opacity .7s ease-in-out;
 }
 
 #pCircle {
@@ -69,10 +69,10 @@
   margin-left: 55px;
   margin-right: auto;
   border-radius: 200px; 
-  opacity:0.7;
-  transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
+  opacity:0.2;
+  transition: opacity .9s ease-in-out;
+  -moz-transition: opacity .9s ease-in-out;
+  -webkit-transition: opacity .9s ease-in-out;
 }
 
 #bCircle {
@@ -84,10 +84,10 @@
   margin-left: 100px;
   margin-right: auto;
   border-radius: 200px; 
-  opacity:0.7;
-  transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
+  opacity:0.2;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
 }
 
 #logo:hover #subText{
