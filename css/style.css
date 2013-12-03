@@ -14,7 +14,7 @@
 
 .shake{
 	-webkit-animation-name: spaceboots;
-	-webkit-animation-duration: 2s;
+	-webkit-animation-duration: 4s;
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
