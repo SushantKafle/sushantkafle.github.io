@@ -83,7 +83,7 @@ var height;
 		function arrangeElements()
 		{
 			width=$(window).width();
-			height=$(window).height();
+			height=window.innerHeight;
 			
 			var textLeftMargin=(width/2)-($("#text").textWidth()/2);
 			var textTopMargin=height - 0.4 * height;
