@@ -2,38 +2,51 @@
 	<head>
 		<title>Sushant Kafle</title>
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rancho">
+		<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/transition.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script language="javascript" type="text/javascript" src="js/script.js"></script>
+		
+		
 	</head>
 	
-	<body background="images/3.jpg">
+	<body bgcolor="#fff">
+        
 	<div id="logo">
-	<div id="message">
-	<div id="text">Kafle Sushant</div>
-	<div id="subtext">Click me >></div>
+        <div id="message">
+        <div id="text">Kafle Sushant.</div>
+        <div id="subtext">Click me >></div>
+        </div>
+        <div id="circles">
+            <div id="bCircle"></div>
+            <div id="gCircle"></div>
+            <div id="rCircle"></div>
+            <div id="pCircle"></div>
+        </div>
 	</div>
-	<div id="circles">
-        <div id="bCircle"></div>
-        <div id="gCircle"></div>
-        <div id="rCircle"></div>
-        <div id="pCircle"></div>
-    </div>
-	</div>
-	
-	
+            
 	<div id="navBar">
 	<ul>
-		<li><a href="http://github.com/SushantKafle">Github</a> | </li>
+		<li><a href="http://github.com/SushantKafle">Github | </a></li>
 		<li>&nbsp; <a href="http://blog.kaflesushant.com.np">Blog</a></li>
 	</ul>
 	</div>
 	
 	<div class="labels">
-		<a href="#"><div class="shake" id="AcPro">&nbsp;&nbsp;Academic Projects&nbsp;&nbsp;</div></a>
-		<a href="#"><div class="shake" id="NaPro">&nbsp;&nbsp;Non-Academic Projects&nbsp;&nbsp;</div></a>
-		<a href="#"><div class="shake" id="Desg">&nbsp;&nbsp;Designs&nbsp;&nbsp;</div></a>
-		<a href="#"><div class="shake" id="Oth">&nbsp;&nbsp;Others&nbsp;&nbsp;</div></a>
+		<a href="#" ><div class="shake" id="AcPro">&nbsp;&nbsp;About Sushant&nbsp;&nbsp;</div></a>
+		<a href="#"><div class="shake" id="NaPro">&nbsp;&nbsp;Curriculum Vitae&nbsp;&nbsp;</div></a>
+		<a href="#"><div class="shake" id="Desg">&nbsp;&nbsp;Projects&nbsp;&nbsp;</div></a>
+		<a href="#"><div class="shake" id="Oth">&nbsp;&nbsp;Contact&nbsp;&nbsp;</div></a>
 	</div>
+        
+    <div id="mainBody">
+        <h1>Body Here</h1>
+        <p></p>
+        adsfkjasldkfjaldskfjlaksdjfaldskfjalksdfj
+        adsfadsfasdfadsfadsfadsfads kdsfjajdslfkajsdflkj
+    </div>
+	
+	
 	</body>
 </html>

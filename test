@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Tangerine'), url('http://example.com/tangerine.ttf') format('truetype');
+}
+body {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+}

@@ -25,8 +25,9 @@
 
 #subText
 {
-position:fixed;
+  position:fixed;
   visibility:hidden;
+  color:rgb(20,20,20);
   font-family:"Candara";
   margin-left:500px;
   margin-top:120px;
@@ -39,7 +40,7 @@ position:fixed;
 .labels
 {
   font-family:"Rancho","Candara";
-  font-size:30px;
+  font-size:40px;
   position:fixed;
 }
 
@@ -86,9 +87,10 @@ position:fixed;
 #text
 {
   position:fixed;
-  font-size:72px;
-  font-family:"Candara";
-  opacity:0.6;
+  font-size:70px;
+  color:#ffcb00;//rgb(255,255,255);
+  font-family:"Lato","Lilita One","Candara";
+  opacity:0.8;
   transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
@@ -98,6 +100,7 @@ position:fixed;
 {
 	position:fixed;
 }
+
 
 #gCircle {
   position:fixed;
@@ -213,7 +216,7 @@ position:fixed;
 
 a:link, a:visited {
  text-decoration: none; 
- color: green;
+ color: rgb(0,0,0);
  opacity:1;
 }
 
@@ -223,5 +226,12 @@ a:hover {
  cursor:pointer;
 }
 
+.footer {
+	float:right;
+}
+
+#mainBody{
+    position: fixed;
+}
 
     

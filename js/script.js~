@@ -29,35 +29,109 @@ var height;
   				});
 			
 			$("#AcPro").mouseover(function(){
-					$(this).html("{ Academic Projects }");
+					$(this).html("[ About Sushant ]");
 				});
 
 			$("#AcPro").mouseout(function(){
-					$(this).html("&nbsp;&nbsp;Academic Projects&nbsp;&nbsp;");
+					$(this).html("&nbsp;&nbsp;About Sushant&nbsp;&nbsp;");
 				});
+            
+            $("#AcPro").click(function(){
+                
+              //  $('#text').css('color','#666');
+            //    $('body').css('background', '#ffcb00');
+                
+                $("#gCircle").hide();
+                $("#rCircle").hide();
+                $("#pCircle").hide();
+                
+                $("#NaPro").hide();
+                $("#AcPro").hide();
+                $("#Desg").hide();
+                $("#Oth").hide();
+                
+                bodyAnimate($("#bCircle"));
+                
+            });
+            
+            $("#NaPro").click(function(){
+                
+                $('#text').css('color','rgb(67,192,123)');
+          //      $('body').css('background', '#ffcb00');
+                
+                $("#bCircle").hide();
+                $("#rCircle").hide();
+                $("#pCircle").hide();
+                
+                $("#NaPro").hide();
+                $("#AcPro").hide();
+                $("#Desg").hide();
+                $("#Oth").hide();
+                
+                bodyAnimate($("#gCircle"));
+                
+            });
+            
+            $("#Desg").click(function(){
+                
+                $('#text').css('color','rgb(112,146,190)');
+  //              $('body').css('background', '#ffcb00');
+                
+                $("#gCircle").hide();
+                $("#rCircle").hide();
+                $("#bCircle").hide();
+                
+                $("#NaPro").hide();
+                $("#AcPro").hide();
+                $("#Desg").hide();
+                $("#Oth").hide();
+                
+                bodyAnimate($("#pCircle"));
+                
+            });
+            
+            
+            $("#Oth").click(function(){
+                
+			      $('#text').css('color','rgb(224,35,97)');
+//                $('body').css('background', '#ffcb00');
+                
+                $("#gCircle").hide();
+                $("#pCircle").hide();
+                $("#bCircle").hide();
+                
+                $("#NaPro").hide();
+                $("#AcPro").hide();
+                $("#Desg").hide();
+                $("#Oth").hide();
+                
+                bodyAnimate($("#rCircle"));
+                
+            });
+            
 
 			$("#NaPro").mouseover(function(){
-					$(this).html("{ Non-Academic Projects }");
+					$(this).html("[ Curriculum Vitae ]");
 				});
 
 			$("#NaPro").mouseout(function(){
-					$(this).html("&nbsp;&nbsp;Non-Academic Projects&nbsp;&nbsp;");
+					$(this).html("&nbsp;&nbsp;Curriculum Vitae&nbsp;&nbsp;");
 				});
 
 			$("#Desg").mouseover(function(){
-					$(this).html("{ Designs }");
+					$(this).html("[ Projects ]");
 				});
 
 			$("#Desg").mouseout(function(){
-					$(this).html("&nbsp;&nbsp;Designs&nbsp;&nbsp;");
+					$(this).html("&nbsp;&nbsp;Projects&nbsp;&nbsp;");
 				});
 
 			$("#Oth").mouseover(function(){
-					$(this).html("{ Others }");
+					$(this).html("[ Contact ]");
 				});
 
 			$("#Oth").mouseout(function(){
-					$(this).html("&nbsp;&nbsp;Others&nbsp;&nbsp;");
+					$(this).html("&nbsp;&nbsp;Contact&nbsp;&nbsp;");
 				});
 
   		});
@@ -79,14 +153,28 @@ var height;
 			_lastspan.remove();
 			return width;
 		}
+        
+        function bodyAnimate($circle)
+        {
+            $circle.animate({width:"20px",height:"20px",marginTop:"130px"},400);
+            $circle.animate({width:"2000px",marginLeft:"-700px",height:"5px"},600);
+            
+            $("#mainBody").show();
+            $("#mainBody").css({marginTop:"520px",marginLeft:"100px"},400);
+        }
 		
 		function arrangeElements()
 		{
 			width=$(window).width();
 			height=window.innerHeight;
 			
+			
+            $("#mainBody").hide();
+            
 			var textLeftMargin=(width/2)-($("#text").textWidth()/2);
 			var textTopMargin=height - 0.4 * height;
+			
+			var textLeftMarginSudo = textLeftMargin + 10;
 			
 			var navBarLeftMargin=(width/2)-70;
 			var navBarTopMargin=(height - 0.05* height);
@@ -97,10 +185,10 @@ var height;
 			var subTextLeftMargin=textLeftMargin+($("#text").textWidth()/2)+130;
 			var subTextTopMargin=textTopMargin+70;
 			
-			var AcProLeftMargin=textLeftMargin - 0.05 * textLeftMargin;
-			var NaProLeftMargin=textLeftMargin + 0.1 *textLeftMargin;
-			var DesgLeftMargin=textLeftMargin + 0.5 * textLeftMargin;
-			var OthLeftMargin=textLeftMargin + 0.75 *textLeftMargin;
+			var AcProLeftMargin=textLeftMargin - 0.12 * textLeftMargin;
+			var NaProLeftMargin=textLeftMargin + 0.1*textLeftMargin;
+			var DesgLeftMargin=textLeftMargin + 0.55 * textLeftMargin;
+			var OthLeftMargin=textLeftMargin + 0.85 *textLeftMargin;
 			
 			
 		if(!lock){
@@ -111,11 +199,11 @@ var height;
 				$("#circles").css({marginLeft:circleLeftMargin});
 			}
 			
-			$("#text").css({marginLeft:textLeftMargin});
+			$("#text").css({marginLeft:textLeftMarginSudo});
 			$("#navBar").css({marginLeft:navBarLeftMargin});
 			$("#circles").css({marginLeft:circleLeftMargin});
 			$("#subtext").css({marginLeft:subTextLeftMargin});
-			$("#AcPro").css({marginLeft:AcProLeftMargin-5});
+			$("#AcPro").css({marginLeft:AcProLeftMargin});
 			$("#NaPro").css({marginLeft:NaProLeftMargin});
 			$("#Desg").css({marginLeft:DesgLeftMargin});
 			$("#Oth").css({marginLeft:OthLeftMargin});
@@ -137,10 +225,10 @@ var height;
 			$("#pCircle").animate({width:"30px",height:"30px",marginTop:"125px"},800);
 			$("#rCircle").animate({width:"30px",height:"30px",marginTop:"125px"},1000);
 
-			$("#bCircle").animate({marginLeft:"180px",opacity:1},800);
+			$("#bCircle").animate({marginLeft:"160px",opacity:1},800);
 			$("#gCircle").animate({marginLeft:"280px",opacity:1},1000);
-			$("#pCircle").animate({marginLeft:"380px",opacity:1},1200);
-			$("#rCircle").animate({marginLeft:"480px",opacity:1},1400);
+			$("#pCircle").animate({marginLeft:"400px",opacity:1},1200);
+			$("#rCircle").animate({marginLeft:"520px",opacity:1},1400);
 		}
 
 		function morphCircles()
@@ -150,5 +238,6 @@ var height;
 			$("#pCircle").animate({width:"8px",height:"300px"},800);
 			$("#rCircle").animate({width:"8px",height:"150px"},1000);  				
 		}
+
 	
 		
