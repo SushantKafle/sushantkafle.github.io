@@ -1,0 +1,115 @@
+#canvasSection{
+                z-index: -2;
+                position:fixed;
+                margin-left: 0px;
+            }
+            
+            body{
+                margin-left: 300px;
+                margin-right:300px;
+                font-family: 'Gentium Book Basic';
+                font-size: 20px;
+            }
+            
+            h1{
+                font-size: 80px;
+                color:#79ac10;
+            }
+            
+            h2{
+                font-size: 30px;
+                color:#79ac10;
+            }
+            
+            h3{
+                text-decoration: underline;
+                color:#79ac10;
+            }
+            
+            #intro{
+                margin-top:60px;
+            }
+            
+            #education
+            {
+                font-size:17px;
+            }
+            
+            .nav li{
+                display:inline;
+                padding-left: 7px;
+            }
+            
+            .projects{
+                width:650px;
+            }
+            
+            
+            .pname{
+                float:left;
+                text-align: right;
+            }
+            
+            .pdes{
+                text-align: right;
+            }
+            
+            .labels{
+                width:300px;
+                font-size: 15px;
+            }
+            
+            .labels li{
+                text-decoration: underline;
+                display:inline;
+                padding-left:5px;
+            }
+            
+            table tr td{
+                padding-left: 20px;
+                padding-bottom: 10px;
+            }
+            
+            #navBar{
+                padding-bottom: 20px;
+            }
+            
+            #email{
+                margin-top: -45px;
+                font-size:18px;
+                padding-bottom: 20px;
+                color:#c5c5c5;
+            }
+
+            #at{
+                font-size: 30px;
+                color:#79ac10;
+            }
+            
+            #me{
+                float:left;
+                padding-left: 0px;
+                padding-right: 20px;
+            }
+            
+            a{
+                text-decoration:none;
+                color:#79ac10;
+            }
+            
+            a:hover{
+                text-decoration:underline;
+            }
+            
+            #details{
+                text-align: justify;
+                width:500px;
+                padding-left: 100px;
+                
+            }
+            #who{
+                padding-bottom: 40px;
+            }
+            #more{
+                padding-top:50px;
+            }
