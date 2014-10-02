@@ -35,9 +35,14 @@
                 font-size:17px;
             }
             
-            .nav li{
+            #mainNav li{
                 display:inline;
-                padding-left: 7px;
+                margin: 0 20px 0 0;
+            }
+
+            #subNav li{
+                display:inline;
+                padding-left: 10px;
             }
             
             .projects{
@@ -78,7 +83,7 @@
                 margin-top: -45px;
                 font-size:18px;
                 padding-bottom: 20px;
-                color:#c5c5c5;
+                #color:#c5c5c5;
             }
 
             #at{
