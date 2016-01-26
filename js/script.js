@@ -29,15 +29,15 @@ var height;
   				});
 			
 			$("#AcPro").mouseover(function(){
-					$(this).html("[ About Sushant ]");
+					$(this).html("[ About me ]");
 				});
 
 			$("#AcPro").mouseout(function(){
-					$(this).html("&nbsp;&nbsp;About Sushant&nbsp;&nbsp;");
+					$(this).html("&nbsp;&nbsp;About me&nbsp;&nbsp;");
 				});
             
             $("#AcPro").click(function(){
-                
+              /*  
               $('#text').css('color','rgb(0,162,232)');
             //    $('body').css('background', '#ffcb00');
                 
@@ -51,11 +51,13 @@ var height;
                 $("#Oth").hide();
                 
                 bodyAnimate($("#bCircle"));
-                
+               */
+
+               window.location = 'http://kaflesushant.com.np/plain/';
             });
             
             $("#NaPro").click(function(){
-                
+                /*
                 $('#text').css('color','rgb(67,192,123)');
           //      $('body').css('background', '#ffcb00');
                 
@@ -69,11 +71,12 @@ var height;
                 $("#Oth").hide();
                 
                 bodyAnimate($("#gCircle"));
-                
+                */
+                window.location = 'http://kaflesushant.com.np/plain/CV/cv.pdf';
             });
             
             $("#Desg").click(function(){
-                
+                /*
                 $('#text').css('color','rgb(112,146,190)');
   //              $('body').css('background', '#ffcb00');
                 
@@ -87,13 +90,14 @@ var height;
                 $("#Oth").hide();
                 
                 bodyAnimate($("#pCircle"));
-                
+                */
+                window.location = 'http://kaflesushant.com.np/plain/#projects';
             });
             
             
             $("#Oth").click(function(){
-                
-			      $('#text').css('color','rgb(224,35,97)');
+                /*
+			    $('#text').css('color','rgb(224,35,97)');
 //                $('body').css('background', '#ffcb00');
                 
                 $("#gCircle").hide();
@@ -106,7 +110,7 @@ var height;
                 $("#Oth").hide();
                 
                 bodyAnimate($("#rCircle"));
-                
+                */
             });
             
 
@@ -185,10 +189,10 @@ var height;
 			var subTextLeftMargin=textLeftMargin+($("#text").textWidth()/2)+130;
 			var subTextTopMargin=textTopMargin+70;
 			
-			var AcProLeftMargin=textLeftMargin - 0.12 * textLeftMargin;
+			var AcProLeftMargin=textLeftMargin - 0.02 * textLeftMargin;
 			var NaProLeftMargin=textLeftMargin + 0.1*textLeftMargin;
-			var DesgLeftMargin=textLeftMargin + 0.55 * textLeftMargin;
-			var OthLeftMargin=textLeftMargin + 0.85 *textLeftMargin;
+			var DesgLeftMargin=textLeftMargin + 0.6 * textLeftMargin;
+			var OthLeftMargin=textLeftMargin + 0.95 *textLeftMargin;
 			
 			
 		if(!lock){
