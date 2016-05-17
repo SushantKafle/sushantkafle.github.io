@@ -1,20 +1,60 @@
 <html>
 <head>
-	<title>Error Analyzer Project (Code)</title>
+	<title>LATLAB ASR-Error Analysizing Package Version 1.0</title>
 </head>
 
 <body>
-	<center><h3>Effect of Speech Recognition Errors on Caption Understandability for People who are Deaf or Hard of Hearing</h3>
-		Sushant Kafle
-	</center>
+	<hr>
+	<h1>NAME</h1>
+	ErrorAnalyer - aligns two time-aligned sentences (<a href="data/SA1.wrd">sample1</a>, <a href="data/SA1.xml">sample2</a>) and performs error analysis
+	<h1>DESCRIPTION</h1>
+	The program <a href="CORE/ErrorAnalyzer.py">ErrorAnalyzer</a> aligns two time aligned sentences (<a href="data/SA1.wrd">sample1</a>, <a href="data/SA1.xml">sample2</a>) and performs analysis on the misaligned or mismatched data. The program looks to categorize the errors based on its property into one of the following types:
 
-<u>Project Directory</u><br/><br/>
-<table>
-	<tr><td> - CELEX 2 </td> <td> ---> </td> <td> <a href="CELEX2/pyCelex.py">pyCelex.py</a> </td> </tr>
-	<tr><td> - UTILS </td> <td> ---> </td> <td> <a href="UTILS/utils.py">utils.py</a> </td> </tr>
-	<tr><td>  </td> <td> ---> </td> <td> <a href="UTILS/G.py">G.py</a> </td> </tr>
-	<tr><td> - CORE </td> <td> ---> </td> <td> <a href="CORE/ErrorAnalyzer.py">ErrorAnalyzer.py</a> </td> </tr>
-	<tr><td> - MODELS </td> <td> ---> </td> <td> <a href="MODELS/Word.py">Word.py</a> </td> </tr>
-	<tr><td>  </td> <td> ---> </td> <td> <a href="MODELS/Sentence.py">Sentence.py</a> </td> </tr>
-	<tr><td>  </td> <td> ---> </td> <td> <a href="MODELS/ASRError.py">ASRError.py</a> </td> </tr>
-</table>
+	<b><ul>
+		<li>OneToMany Substitution Error</li>
+		<li>ManyToOne Substitution Error</li>
+		<li>PhoneNeighbour OneToOne Substitution Error</li>
+		<li>Inflectional OneToOne Substitution Error</li>
+		<li>Derivational OneToOne Substitution Error</li>
+		<li>Other OneToOne Substitution Error</li>
+		<li>Insertion Error</li>
+		<li>Deletion Error</li>
+		<li>Chain Error</li>
+	</ul></b>
+
+	The time-alignment program looks at finding the best possible match of the word time frames. The error analyzer program then performs analysis on the error. For example: if the word is a OneToOne error, the analyzer performs morphological and phonological analysis on the words with the help of <a href="CELEX2/pyCelex.py">pyCelex</a>, which is a basic wrapper (originally from: <a href="https://github.com/maxbane/pyCelex">maxbane:pyClex</a>) for the <a href="https://catalog.ldc.upenn.edu/LDC96L14">CELEX2</a> dataset.
+
+	The software was made for a research project in LatLab. The work is currently under progress. 
+	<hr>
+	<h1>Project Directory</h1>
+		<table>
+			<tr><td> # main </td> <td> ---> </td> <td> <a href="main/main.py">main.py</a> </td> </tr>
+			<tr><td> # CORE </td> <td> ---> </td> <td> <a href="CORE/ErrorAnalyzer.py">ErrorAnalyzer.py</a> </td> </tr>
+			<tr><td> # MODELS </td> <td> ---> </td> <td> <a href="MODELS/Word.py">Word.py</a> </td> </tr>
+			<tr><td>  </td> <td> |--> </td> <td> <a href="MODELS/Sentence.py">Sentence.py</a> </td> </tr>
+			<tr><td>  </td> <td> |--> </td> <td> <a href="MODELS/ASRError.py">ASRError.py</a> </td> </tr>
+			<tr><td> # CELEX 2 </td> <td> ---> </td> <td> <a href="CELEX2/pyCelex.py">pyCelex.py</a> </td> </tr>
+			<tr><td> # UTILS </td> <td> ---> </td> <td> <a href="UTILS/utils.py">utils.py</a> </td> </tr>
+			<tr><td>  </td> <td> |--> </td> <td> <a href="UTILS/G.py">G.py</a> </td> </tr>
+			<tr><td> # data </td> <td> ---> </td> <td> <a href="data/SA1.wrd">SA1.wrd</a> </td> </tr>
+			<tr><td>  </td> <td> |--> </td> <td> <a href="data/SA1.xml">SA1.xml</a> </td> </tr>
+		</table><br/>
+
+		Download the full project <a href="ErrorAnalyzer-1.0.zip">here</a>.
+	<hr>
+	<h1>SAMPLE EXECUTION</h1>
+
+	<img src="code.png" alt="Sample execution code for the error analyzer."></img>
+	<br/>
+	<u>Input Sentences</u><br/>
+	<a href="data/SA1.wrd">Reference Text</a>: she ahd your dark suit in greasy wash water all year <br/>
+	<a href="data/SA1.xml">Hypothesis Text</a>: she had your dark say in greasy was why are all year <br/>
+	<br/>
+	<u>Output</u><br/>
+	Reference: ( WORD: 927.0625 suit 1375.0 )  Hypothesis: ( WORD: 950 say 1290 ) Error Type: OTHERS<br/>
+	Reference: ( WORD: 1851.125 wash 2159.375 )  Hypothesis: ( WORD: 1870 was 2150 ) Error Type: PHONENEIGHBOUR <br/>
+	Reference: ( WORD: 2190.25 water 2422.5 )  Hypothesis: ( WORD: 2160 why 2320 ) ( WORD: 2330 are 2470 ) Error Type: ONETOMANY <br/>
+
+	<hr>
+	<h1>BUGS/COMMENTS</h1>
+	Please contact Sushant Kafle at <a href="http://latlab.ist.rit.edu">LatLab RIT</a> with any bug reports or comments at the email address <a href="mailto:sxk5664@rit.edu">sxk5664@rit.edu</a>. Thank you!

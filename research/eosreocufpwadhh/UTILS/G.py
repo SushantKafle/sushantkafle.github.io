@@ -48,3 +48,64 @@ def factor_get_error_type(index):
         return names[index]
     else:
         return names[int(index)]
+
+
+
+POS_TAGS = {
+    "NN" : 1, #NOUN
+    "NNS" : 1, #NOUN
+    "NNP" : 1, #NOUN
+    "NNPS" : 1, #NOUN
+
+    "VB" : 2, #VERB
+    "VBD" : 2, #VERB
+    "VBG" : 2, #VERB
+    "VBN" : 2, #VERB
+    "VBP" : 2, #VERB
+    "VBZ" : 2, #VERB
+
+    "PRP" : 3, #PRONOUN
+    "PRP$" : 3, #PRONOUN
+    "WP": 3,  # PRONOUN
+    "WP$": 3,  # PRONOUN
+
+    "RB" : 4, #ADV
+    "RBR" : 4, #ADV
+    "RBS" : 4, #ADV
+    "WRB" : 4, #ADV
+
+    "JJ" : 5, #ADJ
+    "JJR" : 5, #ADJ
+    "JJS" : 5, #ADJ
+
+    "IN" : 6, #PREP
+
+    "CC" : 7, #CONJUNCTION
+
+    "UH" : 8, #INTERJECTION
+
+    "DT" : 9, #DET
+    "WDT" : 9, #DET
+
+    "CD" : 10, #NUM
+
+    "MD" : 11, #MODAL (could, will)
+
+    "PDT" : 11, #PREDETERMINER
+
+    "POS" : 11, #POSSESIVE ENDING
+
+    "RP" : 11, #PARTICLE
+
+    "TO" : 11, #TO
+
+    "EX" : 11, #EXISTENTIAL THERE
+
+    "FW" : 11, #FOREIGN WORD
+
+    "SYM" : 11, #SYM
+
+    "LS" : 11, #LIST MARKER
+
+    "TBD" : -1
+}
