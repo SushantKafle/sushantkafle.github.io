@@ -37,6 +37,7 @@ class ASRError:
 
 
     def __str__(self):
+        from UTILS import G
         ref_str = "Reference: "
         hyp_str = "Hypothesis: "
         for reference in self.get_reference_word_list():
@@ -44,4 +45,4 @@ class ASRError:
         for hypothesis in self.get_hypothesis_word_list():
             hyp_str += str(hypothesis) + " "
 
-        return ref_str + " " + hyp_str + str(self.error_type)
+        return ref_str + " " + hyp_str + "Error Type: " + G.factor_get_error_type(self.error_type)
