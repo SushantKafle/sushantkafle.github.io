@@ -20,7 +20,8 @@ var dynamicBackground = {
         canvas.height = height;
         canvas.width = width;
         
-        $("#canvasSection").css('margin-top', -3*height);
+        //$("#canvasSection").css('margin-top', -3*height);
+        //$("#canvasSection").css('background', "#000");
         
         val = [-1,1];
         
