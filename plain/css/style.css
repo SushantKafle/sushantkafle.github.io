@@ -33,7 +33,7 @@
             }
 
             #audiocontrol{
-                width:300px;
+                width:250px;
                 background-color:rgb(215,212,213);
             }
 
@@ -125,12 +125,10 @@
             
             #details{
                 text-align: justify;
-                width:500px;
-                padding-left: 100px;
-                
             }
             #who{
                 padding-bottom: 40px;
+                width:670px;
             }
             #more{
                 padding-top:50px;
