@@ -25,6 +25,11 @@
                 text-decoration: underline;
                 color:#79ac10;
             }
+
+            #audiocontrol{
+                width:300px;
+                background-color:#c5c5c5;
+            }
             
             #intro{
                 margin-top:60px;
@@ -83,7 +88,6 @@
                 margin-top: -45px;
                 font-size:18px;
                 padding-bottom: 20px;
-                #color:#c5c5c5;
             }
 
             #at{

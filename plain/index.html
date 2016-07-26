@@ -17,17 +17,17 @@
 
            setInterval(function(){
                //dynamicBackground.animate();
-               check_window();
+               //check_window();
             },45);
         });
 
-        function check_window(){
+        /*function check_window(){
             if($(window).width() < 800){
                audio_control = $("#audiocontrol").hide()
             }else{
                 audio_control = $("#audiocontrol").show()
             }
-        }
+        }*/
 
         </script>
 
@@ -63,18 +63,14 @@
 
         <div id="who">
             <div id = "me" width="220px" height="340px" >
-                <img src="data/2016-06-25.png" width="300px" height="400px" style="display:block;margin-left: auto; margin-right: auto;" />
+                <img src="data/2016-06-25.png" width="300px" height="400px" />
                 <div id="audiocontrol">
-                    <span class="labels" >SOO-shant KAHF-lay</span><br/>
-                    <audio controls style="width:220px;">
-                      <source src="data/pronounciation.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                    </audio>
+                    <a href="data/pronounciation.wav">SOO-shant KAHF-lay</a>
                 </div>
             </div>
             <div id="details">
                 I am a first year Ph.D. student in Computing and Information Science at the Golisano College of Computing and Information Science, Rochester Institute of Technology (RIT). I am also working as a research assistant at <a href="http://latlab.ist.rit.edu">LATLab RIT</a> supervised by Professor <a href="http://huenerfauth.ist.rit.edu">Matt Huenerfauth</a>. My current work is a part of a research project on generating real-time captions during live meetings for people who are deaf or hard of hearing (DHH), where I am investigating ways to optimize Automatic Speech Recognition (ASR) system for the task of captioning for DHH users.
-                <br/>
+                <br/><br/>
                 <b>Research Interests:</b> Human Computer Interaction, Machine Learning, Natural Language Processing, Data mining
             </div>
         </div>
