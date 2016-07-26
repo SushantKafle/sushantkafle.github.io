@@ -12,7 +12,8 @@ var height;
 			
 			$("#logo").click(
   				function(e){
-  					if(!lock)
+  					document.location.href = "http://kaflesushant.com.np/plain/";
+  					/*if(!lock)
   					{
 	  					lock=true;
 	  					$(this).animate({marginTop: -(0.6*height)}, 1000);
@@ -23,9 +24,7 @@ var height;
 	  					morphCircles();
 	  					showLabels();
 	  					
-	  				}
-
-  					
+	  				}*/
   				});
 			
 			$("#AcPro").mouseover(function(){

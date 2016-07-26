@@ -34,7 +34,11 @@
 
             #audiocontrol{
                 width:300px;
-                background-color:#c5c5c5;
+                background-color:rgb(215,212,213);
+            }
+
+            #audiocontrol a{
+                color:#79ac10;
             }
             
             #intro{

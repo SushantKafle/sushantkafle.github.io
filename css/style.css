@@ -88,7 +88,7 @@
 {
   position:fixed;
   font-size:70px;
-  color:#ffcb00;//rgb(255,255,255);
+  color:#ffcb00;
   font-family:"Lato","Lilita One","Candara";
   opacity:0.8;
   transition: opacity .5s ease-in-out;
