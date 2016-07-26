@@ -11,6 +11,12 @@
                 font-size: 20px;
             }
             
+            table {
+                table-layout: auto;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            
             h1{
                 font-size: 80px;
                 color:#79ac10;

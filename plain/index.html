@@ -17,17 +17,13 @@
 
            setInterval(function(){
                //dynamicBackground.animate();
-               //check_window();
+               check_window();
             },45);
         });
 
-        /*function check_window(){
-            if($(window).width() < 800){
-               audio_control = $("#audiocontrol").hide()
-            }else{
-                audio_control = $("#audiocontrol").show()
-            }
-        }*/
+        function check_window(){
+            $("#me").height($("#details").height())
+        }
 
         </script>
 
@@ -62,7 +58,7 @@
         </div>
 
         <div id="who">
-            <div id = "me" width="220px" height="340px" >
+            <div id = "me" width="300px" height="400px" >
                 <img src="data/2016-06-25.png" width="300px" height="400px" />
                 <div id="audiocontrol">
                     <a href="data/pronounciation.wav">SOO-shant KAHF-lay</a>
