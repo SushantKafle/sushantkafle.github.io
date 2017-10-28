@@ -15,14 +15,10 @@ var PageTransitions = (function() {
         
 
 	function init() {
-        
-        alert("HereRER");
-        
-		
-        
+	
         
         $("#AcPro").click(function(){
-                alert("TEst");
+                
         });
 
 	}
