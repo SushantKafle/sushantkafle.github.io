@@ -87,6 +87,7 @@
 #text
 {
   position:fixed;
+  margin: auto;
   font-size:70px;
   color:#ffcb00;
   font-family:"Lato","Lilita One","Candara";
@@ -191,6 +192,10 @@
 #logo:hover #bCircle{
 	opacity:1;
 	transition-delay:0s;
+}
+
+#message {
+  margin:auto;
 }
 
 #navBar

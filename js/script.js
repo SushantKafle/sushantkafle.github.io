@@ -2,13 +2,18 @@ var lock = false;
 var width;
 var height;
 
+$.fn.redraw = function(){
+  $(this).each(function(){
+    var redraw = this.offsetHeight;
+  });
+};
 		$(document).ready(function(){
-		
 			arrangeElements();
-			
 			$(window).resize(function(){
 				arrangeElements();
 			});
+			
+			$('#logo').redraw();
 			
 			$("#logo").click(
   				function(e){
@@ -26,7 +31,7 @@ var height;
 	  					
 	  				}*/
   				});
-			
+			/*
 			$("#AcPro").mouseover(function(){
 					$(this).html("[ About me ]");
 				});
@@ -36,7 +41,7 @@ var height;
 				});
             
             $("#AcPro").click(function(){
-              /*  
+              --comment
               $('#text').css('color','rgb(0,162,232)');
             //    $('body').css('background', '#ffcb00');
                 
@@ -50,13 +55,13 @@ var height;
                 $("#Oth").hide();
                 
                 bodyAnimate($("#bCircle"));
-               */
+               --comment
 
                window.location = 'http://kaflesushant.com.np/plain/';
             });
             
             $("#NaPro").click(function(){
-                /*
+                --comment
                 $('#text').css('color','rgb(67,192,123)');
           //      $('body').css('background', '#ffcb00');
                 
@@ -70,12 +75,12 @@ var height;
                 $("#Oth").hide();
                 
                 bodyAnimate($("#gCircle"));
-                */
+                --comment
                 window.location = 'http://kaflesushant.com.np/plain/CV/cv.pdf';
             });
             
             $("#Desg").click(function(){
-                /*
+                --comment
                 $('#text').css('color','rgb(112,146,190)');
   //              $('body').css('background', '#ffcb00');
                 
@@ -89,13 +94,13 @@ var height;
                 $("#Oth").hide();
                 
                 bodyAnimate($("#pCircle"));
-                */
+                --comment
                 window.location = 'http://kaflesushant.com.np/plain/#projects';
             });
             
             
             $("#Oth").click(function(){
-                /*
+                --comment
 			    $('#text').css('color','rgb(224,35,97)');
 //                $('body').css('background', '#ffcb00');
                 
@@ -109,7 +114,7 @@ var height;
                 $("#Oth").hide();
                 
                 bodyAnimate($("#rCircle"));
-                */
+                --comment
             });
             
 
@@ -135,8 +140,8 @@ var height;
 
 			$("#Oth").mouseout(function(){
 					$(this).html("&nbsp;&nbsp;Contact&nbsp;&nbsp;");
-				});
-
+				});*/
+			//arrangeElements();
   		});
 		
 		jQuery.fn.textWidth = function(){
