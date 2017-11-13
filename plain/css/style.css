@@ -1,141 +1,147 @@
-#canvasSection{
-                z-index: -2;
-                position:fixed;
-                margin-left: 0px;
-            }
-            
-            body{
-                margin:auto;
-                width: 800px;
-                font-family: 'Gentium Book Basic';
-                font-size: 20px;
-            }
-            
-            table {
-                table-layout: auto;
-                border-collapse: collapse;
-                width: 100%;
-            }
-            
-            h1{
-                font-size: 80px;
-                color:#79ac10;
-            }
-            
-            h2{
-                font-size: 30px;
-                color:#79ac10;
-            }
-            
-            h3{
-                text-decoration: underline;
-                color:#79ac10;
-            }
+#canvasSection {
+    z-index: -2;
+    position: fixed;
+    margin-left: 0px;
+}
+body {
+    margin: auto;
+    width: 800px;
+    font-family: 'Gentium Book Basic';
+    font-size: 20px;
+}
+table {
+    table-layout: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+h1 {
+    font-size: 80px;
+    color: #79ac10;
+}
+h2 {
+    font-size: 30px;
+    color: #79ac10;
+}
+h3 {
+    text-decoration: underline;
+    color: #79ac10;
+}
+#audiocontrol {
+    width: 250px;
+    border: 1px solid #79ac10;
+    background-color: rgb(215, 212, 213);
+}
+#audiocontrol a {
+    color: #79ac10;
+}
+#intro {
+    margin-top: 60px;
+}
+#education {
+    font-size: 17px;
+}
+#mainNav li {
+    display: inline;
+    margin: 0 20px 0 0;
+}
+#subNav li {
+    display: inline;
+    padding-left: 10px;
+}
+.projects {
+    width: 650px;
+}
+.pname {
+    float: left;
+    text-align: right;
+}
+.pdes {
+    text-align: right;
+}
+.labels {
+    width: 600px;
+    font-size: 18px;
+}
+.labels li {
+    text-decoration: underline;
+    display: inline;
+    padding-left: 5px;
+}
+table tr td {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+#navBar {
+    padding-bottom: 20px;
+}
+#email {
+    margin-top: -45px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+#at {
+    font-size: 30px;
+    color: #1079ac;
+}
+#me {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-top: auto;
+}
+a {
+    text-decoration: none;
+    color: #1079ac;
+}
+a:hover {
+    text-decoration: underline;
+}
+#details {
+    text-align: justify;
+}
+#who {
+    padding-bottom: 40px;
+    width: 800px;
+}
+#more {
+    padding-top: 50px;
+}
+.image_placeholder {
+    width: 250px;
+    height: 400px;
+}
 
-            #audiocontrol{
-                width:250px;
-                border:1px solid #79ac10;
-                background-color:rgb(215,212,213);
-            }
+.datemark {
+    font-color:red;
+    font-style: bold;
+}
 
-            #audiocontrol a{
-                color:#79ac10;
-            }
-            
-            #intro{
-                margin-top:60px;
-            }
-            
-            #education
-            {
-                font-size:17px;
-            }
-            
-            #mainNav li{
-                display:inline;
-                margin: 0 20px 0 0;
-            }
 
-            #subNav li{
-                display:inline;
-                padding-left: 10px;
-            }
-            
-            .projects{
-                width:650px;
-            }
-            
-            
-            .pname{
-                float:left;
-                text-align: right;
-            }
-            
-            .pdes{
-                text-align: right;
-            }
-            
-            .labels{
-                width:600px;
-                font-size: 18px;
-            }
-            
-            .labels li{
-                text-decoration: underline;
-                display:inline;
-                padding-left:5px;
-            }
-            
-            table tr td{
-                padding-left: 20px;
-                padding-bottom: 10px;
-            }
-            
-            #navBar{
-                padding-bottom: 20px;
-            }
-            
-            #email{
-                margin-top: -45px;
-                font-size:18px;
-                padding-bottom: 20px;
-            }
+table.tableSection {
+  display: table;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  height: 400px;
+  overflow: scroll;
+}
 
-            #at{
-                font-size: 30px;
-                color:#1079ac;
-            }
-            
-            #me{
-                float:left;
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-top: 10px;
-                margin-right: 10px;
-                margin-top:auto;
+table.tableSection td + td { border-left:1px solid #ccc; }
 
-            }
-            
-            a{
-                text-decoration:none;
-                color:#1079ac;
-            }
-            
-            a:hover{
-                text-decoration:underline;
-            }
-            
-            #details{
-                text-align: justify;
-            }
-            #who{
-                padding-bottom: 40px;
-                width:800px;
-            }
-            #more{
-                padding-top:50px;
-            }
-            .image_placeholder{
-                width: 250px;
-                height: 400px;
-            }
+table.tableSection tr {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table.tableSection td {
+  padding: .625em;
+  text-align: center;
+}
+
+
+

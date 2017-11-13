@@ -13,8 +13,6 @@ $.fn.redraw = function(){
 				arrangeElements();
 			});
 			
-			$('#logo').redraw();
-			
 			$("#logo").click(
   				function(e){
   					document.location.href = "http://kaflesushant.com.np/plain/";
@@ -144,24 +142,16 @@ $.fn.redraw = function(){
 			//arrangeElements();
   		});
 		
-		jQuery.fn.textWidth = function(){
-			var _t = jQuery(this);
-			var html_org = _t.html();
-			if(_t[0].nodeName=='INPUT'){
-				html_org = _t.val();
-			}
-			var html_calcS = '<span>' + html_org + '</span>';
-			jQuery('body').append(html_calcS);
-			var _lastspan = jQuery('span').last();
-			_lastspan.css({
-				'font-size' : _t.css('font-size')
-				,'font-family' : _t.css('font-family')
-			})
-			var width =_lastspan.width() + 5;
-			_lastspan.remove();
-			return width;
-		}
-        
+		$.fn.textWidth = function() {
+		    var htmlCalc = $('<span>' + this.html() + '</span>');
+		    htmlCalc.css('font-size', this.css('font-size'))
+		            .hide()
+		            .prependTo('body');
+		    var width = htmlCalc.width();
+		    htmlCalc.remove();
+		    return width;
+		};
+
         function bodyAnimate($circle)
         {
             $circle.animate({width:"20px",height:"20px",marginTop:"130px"},400);
@@ -176,10 +166,12 @@ $.fn.redraw = function(){
 			width=$(window).width();
 			height=window.innerHeight;
 			
-			
+			console.log(width + " " + height);
+			console.log($("#text").textWidth());
+
             $("#mainBody").hide();
             
-			var textLeftMargin=(width/2)-($("#text").textWidth()/2);
+			var textLeftMargin=(width/2) - ($("#text").textWidth()/2);
 			var textTopMargin=height - 0.4 * height;
 			
 			var textLeftMarginSudo = textLeftMargin + 10;
@@ -207,6 +199,7 @@ $.fn.redraw = function(){
 				$("#circles").css({marginLeft:circleLeftMargin});
 			}
 			
+			console.log(textLeftMarginSudo);
 			$("#text").css({marginLeft:textLeftMarginSudo});
 			$("#navBar").css({marginLeft:navBarLeftMargin});
 			$("#circles").css({marginLeft:circleLeftMargin});
