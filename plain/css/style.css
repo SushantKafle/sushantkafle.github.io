@@ -126,8 +126,6 @@ table.tableSection {
   margin: 0;
   padding: 0;
   table-layout: fixed;
-  height: 400px;
-  overflow: scroll;
 }
 
 table.tableSection td + td { border-left:1px solid #ccc; }
