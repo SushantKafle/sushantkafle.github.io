@@ -164,6 +164,8 @@ table.tableSection td {
     padding-top: 2px;
     font-size: 18px;
     padding-bottom: 2px;
+    color:  #f94f61;
+    font-weight: bold;
 }
 
 .pub-award img {
