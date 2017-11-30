@@ -141,5 +141,59 @@ table.tableSection td {
   text-align: center;
 }
 
+.pub-date {
+    text-align:left;
+    color: #1079ac;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+.pub-item {
+    padding-left: 20px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.pub-detail {
+    padding-top: 2px;
+    font-size: 18px;
+    padding-bottom: 2px
+}
+
+.pub-award {
+    padding-top: 2px;
+    font-size: 18px;
+    padding-bottom: 2px;
+}
+
+.pub-award img {
+    width: 15px;
+    height: 15px;
+}
+
+.pub-title {
+    padding-top: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #00000;
+    padding-bottom: 2px;
+}
+
+.pub-access a {
+    text-decoration:none;
+}
+
+.pub-access {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.pub-access img {
+    width: 15px;
+    height: 15px;
+}
+
 
 
