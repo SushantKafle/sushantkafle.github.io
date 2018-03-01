@@ -126,6 +126,7 @@ table.tableSection {
   margin: 0;
   padding: 0;
   table-layout: fixed;
+  overflow: auto;
 }
 
 table.tableSection td + td { border-left:1px solid #ccc; }
@@ -138,7 +139,7 @@ table.tableSection tr {
 
 table.tableSection td {
   padding: .625em;
-  text-align: center;
+  font-size: 16px;
 }
 
 .pub-date {
