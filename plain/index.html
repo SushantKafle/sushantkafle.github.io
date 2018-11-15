@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Sushant Kafle</title>
+        <script src="../js/jquery.min.js"></script>
+        
+        <style>
+            body {
+                margin: auto;
+                margin-top:10%;
+                width: 800px;
+                font-size: 20px;
+                color: #6b6b6b;
+            }
+
+        </style>
+
+        <script>
+        $(document).ready( function() {
+            setTimeout(function(){
+                window.location.href="http://kaflesushant.com.np/"; // The URL that will be redirected too.
+            }, 10000);
+
+            setInterval(function() {
+                var count = parseInt($("#counter").html());
+                $("#counter").html(count - 1);
+                console.log("test");
+            }, 1000);
+        });
+        </script>
+	</head>
+
+	<body bgcolor="#fff">
+        <center>
+        <h4> This page has moved to a new address: <a href="http://kaflesushant.com.np/">http://kaflesushant.com.np/</a>. <br/> <br/>
+
+        Redirecting you to the new address in <span id="counter">10</span> seconds. </h4>
+        </center>
+	</body>
+</html>
