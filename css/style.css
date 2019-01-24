@@ -196,6 +196,10 @@
  section .highlight {
      background: #f9f9f9;
 }
+
+.inner .pretext {
+     margin-bottom: 30px;
+}
  #intro {
      background: #edeae5;
 }
